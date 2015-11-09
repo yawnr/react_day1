@@ -5,6 +5,7 @@
     <script src="https://fb.me/react-0.13.3.js" charset="utf-8"></script>
     <script src="https://fb.me/JSXTransformer-0.13.3.js" charset="utf-8"></script>
     <script src="widgets.js" type="text/jsx"></script>
+    <link rel="stylesheet" href="widgets.css" type="text/css" />
     <title>Widgets!</title>
   </head>
   <body>
@@ -20,5 +21,43 @@
       document.getElementById('autocomplete')
       );
     </script>
+
+    <h3>Weather Clock</h3>
+    <div id="weather-clock">
+
+    </div>
+    <script type="text/jsx">
+    React.render(
+      <Clock/>,
+      document.getElementById('weather-clock')
+      );
+    </script>
+
+    <h3>Weather</h3>
+    <div id="weather">
+
+    </div>
+    <script type="text/jsx">
+    React.render(
+      <Weather/>,
+      document.getElementById('weather')
+      );
+    </script>
+
+  </div>
+
+  <h3>Tabs</h3>
+  <div id="tabs">
+
+  </div>
+
+  <script type="text/jsx">
+  React.render(
+    <Tabs tabData={ tabData } />,
+    document.getElementById('tabs')
+    );
+  </script>
+
+
   </body>
 </html>
